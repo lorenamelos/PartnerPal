@@ -141,7 +141,7 @@ st.markdown("""
         <div style="text-align: justify">
         Welcome to PartnerPal, your AI-powered companion designed to enhance emotional intelligence in every conversation.
         Whether you need someone to talk to, seek advice, or just want a friendly chat, PartnerPal is here to listen,
-        understand, and respond with empathy. Our chatbot not only engages in meaningful dialogue but also detects the underlying
+        understand, and respond with empathy. This chatbot not only engages in meaningful dialogue but also detects the underlying
         emotions and sentiments in each interaction, providing responses that resonate with your feelings. Start a conversation
         and experience the difference that emotional intelligence can make.
         </div>
