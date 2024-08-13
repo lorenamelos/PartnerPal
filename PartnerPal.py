@@ -169,9 +169,13 @@ if prompt := st.chat_input("enter your message here"):
     emotion = predict_emotion(prompt)
     sentiment = predict_sentiment(prompt)
 
+    # Create and store the system message for emotion and sentiment
+    system_message = f"**Emotion:** {emotion}, **Sentiment:** {sentiment}"
+    st.session_state.messages.append({"role": "system", "content": system_message})
+
     # Display predicted emotion and sentiment
     with st.chat_message("system"):
-        st.markdown(f"**Emotion:** {emotion}, **Sentiment:** {sentiment}")
+        st.markdown(system_message)
 
     # Placeholder for the chatbot's streaming response
     response_placeholder = st.chat_message("assistant")
