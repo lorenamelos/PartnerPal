@@ -39,7 +39,7 @@ PartnerPal is an AI-powered chatbot designed to simulate emotionally intelligent
 
 1. Clone this repository:
     ```bash
-    git clone https://github.com/yourusername/partnerpal.git
+    git clone https://github.com/yourusername/PartnerPal.git
     cd partnerpal
     ```
 
@@ -50,7 +50,7 @@ PartnerPal is an AI-powered chatbot designed to simulate emotionally intelligent
 
 3. Run the Streamlit app:
     ```bash
-    streamlit run app.py
+    streamlit run PartnerPal.py
     ```
 
 ## Future Work
