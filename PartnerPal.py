@@ -44,8 +44,8 @@ import replicate
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-def stream_llama_response(few_shot_examples, user_input, top_k=50, top_p=0.9, max_tokens=512, min_tokens=0,
-                          temperature=0.5, presence_penalty=1.15, frequency_penalty=0.2):
+def stream_llama_response(few_shot_examples, user_input, top_k=50, top_p=0.98, max_tokens=512, min_tokens=0,
+                          temperature=0.5, presence_penalty=1.25, frequency_penalty=0.5):
     model_name = "meta/meta-llama-3-70b-instruct"
 
     # Update the prompt template to include few-shot examples, conversation history, and the {prompt} placeholder
@@ -84,10 +84,18 @@ def stream_llama_response(few_shot_examples, user_input, top_k=50, top_p=0.9, ma
         yield response  # Yield the current response to update the UI incrementally
 
 def generate_response_with_emotional_intelligence(user_input):
+
     # Step 1: Use your predefined few-shot examples
     few_shot_examples = """
-    user: Hey babe, how was your day?
-    partner: It was pretty good! I managed to finish an important project at work, which feels like a huge weight off my shoulders. How about you? What did you get up to today?
+
+    user: Hey bae, are you there?
+    partner: Hey babe, all good?
+    user: all good bae. Just wanted to ask the name of that restaurant we have been last weekend! Laura wants to take her gilfriend there!
+    partner: oh that's the Hou Mei! It's amazing, they gonna love it!
+
+    user: hey love
+    parter: hey sweety, how  are you?
+    user: All good! I managed to finish an important project at work, which feels like a huge weight off my shoulders. How about you? What did you get up to today?
 
     user: I didn’t like the way you talked to me earlier.
     partner: I’m sorry if I hurt your feelings. Let’s talk about it and make things right.
