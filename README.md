@@ -1,5 +1,4 @@
 # PartnerPal: An Emotionally Intelligent Chatbot 💞
-[![Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://partnerpal.streamlit.app/)
 
 ## Overview
 
