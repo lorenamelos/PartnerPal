@@ -4,6 +4,8 @@
 
 PartnerPal is an AI-powered chatbot designed to simulate emotionally intelligent conversations between partners. It leverages state-of-the-art NLP models to detect underlying emotions and sentiments in user input and responds accordingly with empathy and understanding. This project demonstrates the integration of emotion and sentiment analysis models with a large language model to create a highly interactive and context-aware chatbot.
 
+[Streamlit App] (https://partnerpal.streamlit.app/)
+
 ## Features
 
 - **Emotion and Sentiment Detection**: The chatbot uses fine-tuned `DistilBERT` models to predict the user's emotions and sentiments. These predictions guide the chatbot's responses, ensuring they are contextually appropriate and emotionally resonant.
